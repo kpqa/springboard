@@ -1,0 +1,99 @@
+
+# **Conceptual Exercise - CSS Fundamentals**
+
+# Question 1 ❓
+Explain how CSS differs from HTML in the context of web development.
+### Answer 🔑
+HTML is the semantic or the skeletan and the content of the webpages and css is about the look and feel of the wesites to make webpages interactive with styles e.g colors, layout etc
+
+# Question 2 ❓
+
+List the methods of including CSS in an HTML document and briefly describe each.
+
+### Answer 🔑
+
+External styleshet: This stylesheet can be embedded inside the <head> tag by using <link> tag e.g <link rel=stylesheet href="filename.css">
+External stylesheet is most efficient way of styling webpages to provide styles to mutiple webpages, if some style needs to be implemented for multiple pages, external stylesheet is th best way. In case the same style needs to be modified across multiple webpages then this is the best way to embedded stylesheets in html  
+
+
+Internal stylesheet: This stylesheet can be embedded inside the <head> tag by using <style> tag
+After Externka stylesheet, Internal stylesheets are the best to implement styles to specific webpage or HTML file.  
+
+Inline stylesheet: This stylesheet can be embedded with each html element by using the style attribute e.g <h1 style="color:red"><h1> 
+This is useful when style needs to be impelemnted to specific HTML element. It is not a good practic, however can be useful in rare cases
+
+
+# Question 3 ❓
+
+Describe the anatomy of a CSS rule.
+
+### Answer 🔑
+
+Seector and Declaration block
+Selector is the HTML element and declaration block is css, consists of css propery and value surrounded by curly braces
+Declaration block can have mutiple declations separated by semicolon
+e.g h1{color: #ff0000; background-color: #00ff00}
+
+# Question 4 ❓
+
+When might you want to use RGBA instead of RGB?
+
+### Answer 🔑
+
+RGBA provded 1 extra feature opacity (transparency), apart from color with last letter "A" in RGBA, 0 (completely transparent) and 1 (completely opaque)  
+
+
+# Question 5 ❓
+
+How do Hex color values differ from RGB?
+
+### Answer 🔑
+
+
+Hex and RGB provide color to HTML elements 
+RGB stands for (red, green, and blue)
+Hex codes build with 6 Hexadecimal characters(Hexadecimal ranges from 0-15, 10-15 represnted by A-F) and represent same colrors RGB (1st 2 characters represent Red, 2nd green and 3rd Blue)
+
+
+# Question 6 ❓
+
+When might a developer prefer to use HSL over other color formats?
+
+### Answer 🔑
+
+HSL stands for Hue, Saturation, and Lightness. Color can be controlled with each different conponent to impelemt distict result
+H bring the actual color from 0 to 360. 0 (or 360) is red, 120 is green, 240 is blue.
+S is saturation (0 fully grey, 100 full color)
+L is lighness (0 fully dark and 100 full light color)
+
+# Question 7 ❓
+
+What are the primary text properties used in CSS to modify the appearance and layout of text?
+
+### Answer 🔑
+
+Some primary text properties include `color`, `font-family`, `font-size`, `font-weight`, `text-align`, `text-decoration`, `text-transform`, `line-height`, and `text-indent`.
+
+# Question 8 ❓
+
+In what scenarios might it be beneficial to use `vh` or `vw` as a unit for font size?
+
+### Answer 🔑
+
+`vh` (viewport height) and `vw` (viewport width) are relative to the size of the viewport. Using these units can be beneficial when you want text to be responsive to the size of the viewport. For instance, if you want a headline always to occupy a certain percentage of the viewport's width or height, using `vh` or `vw` can achieve that.
+
+# Question 9 ❓
+
+Explain the difference between `em` and `rem` units.
+
+### Answer 🔑
+
+Both `em` and `rem` are relative units in CSS. `em` is relative to the font size of its closest parent, whereas `rem` is relative to the root (usually the `<html>`) element's font size. This means if you have nested elements with font sizes specified in `em`, they can compound, while `rem` will always remain consistent relative to the root.
+
+# Question 10 ❓
+
+If multiple font families are listed in the font-family property, how does the browser decide which one to display?
+
+### Answer 🔑
+
+The browser will try to use the fonts in the order they are listed. If the first font is not available on the user's system or through linked font resources, the browser will attempt to use the next font in the list, and so on. It's a fallback mechanism to ensure that if a specific font isn't available, the text can still be displayed in an alternative font.
