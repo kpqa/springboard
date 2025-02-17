@@ -1,0 +1,105 @@
+body
+{
+  position: relative;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.red
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.green
+{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+
+.blue
+{
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+}
+
+.yellow
+{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+}
+
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4
+{
+position: relative; /*Set position:relative to all the exercise-* divs*/
+}
+
+.exercise-1 div,
+.exercise-2 div,
+.exercise-3 div,
+.exercise-4 div
+{
+position: relative; /*Set position:relative to all the divs inside the exercise-* Divs*/
+}
+
+/* Exercise 2 */
+
+.exercise-2
+{
+  top: 15px; /*Set position from the top*/
+  
+}
+
+.exercise-2 .green,
+.exercise-2 .blue,
+.exercise-2 .yellow
+{
+  top: 10px; /*Set 10px from the top*/
+  left: 10px; /*Set 10px from the left*/
+}
+
+/* Exercise 3 */
+
+.exercise-3
+{
+  top: 30px; /*Set position from the top*/
+}
+
+.exercise-3 .green
+{
+  position: relative;
+}
+
+.exercise-3 .blue,
+.exercise-3 .yellow
+{
+  position: absolute; /*Set position:absolute */
+  right: 0; /*Position right*/
+  bottom: 0; /*Position bottom*/
+}
+
+/* Exercise 4 */
+
+.exercise-4
+{
+  top: 45px; /*Set position from the top*/
+}
+
+.exercise-4 .blue
+{
+  position:fixed; /*Set position:fixed */
+  right: 0; /*Set position right */
+}
+
+.exercise-4 .yellow
+{ 
+  position: absolute; /*Set position:absolute */
+  right: 0; /*Set position right */
+}
