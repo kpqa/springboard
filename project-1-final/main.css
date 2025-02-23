@@ -1,0 +1,289 @@
+/* All elements */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none
+
+}
+/* Body defaults */
+body{
+    background-color: hsla(240, 2%, 87%, 0.9);
+    /* opacity: 0.9; */
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    border: 10px solid  hsl(199, 8%, 41%);
+    margin: 2rem;
+    padding: 2rem;
+    color: hsl(60, 14%, 15%);
+    background-color: hsl(202, 60%, 40%, 0.1);
+}
+/* ul list styles */
+ul{
+    list-style: none;
+}
+/* All list items */
+ul li{
+    /* border-left: 2px solid hsl(73deg 66.91% 39.24% / 90%); */
+    border-left: 2px solid hsl(197, 77%, 31%);  
+    margin-top: 1px;
+    padding: 2px;
+    border-radius: 4%
+}
+/* color for all h tags */
+h1,h2,h3,h4,h5,h6{
+    color:  hsl(197, 77%, 31%);  
+}
+
+/* Anchor tag base properties*/
+a{
+    color: hwb(241 4% 7%); 
+    text-decoration: none;
+}
+/*------------ Header Properties Start------------ */
+/* Candidate info flex box starts here */
+/* Candidate info container as display:flex*/
+.candidate-info-container, div.candidate-name-container{
+    display: flex;
+}
+
+/* candidate picture */
+.candidate-pic-container img{
+    border: 3px dotted hsl(197, 77%, 31%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: border 2s ease;
+}
+/* Candidate Job title on top */
+span.job-title{
+    letter-spacing: 0px;
+    font-size: 0.6em;
+}
+
+/* Candidate name container as display:flex*/ 
+div.candidate-name-container{
+    margin: 0 0 0 70px;
+    flex-grow: 2;
+    align-items: center;   
+}
+/* Candidate name container's Name and Title  */
+div.candidate-name-container div:first-child{
+    flex-grow: 2;
+    text-align: center;
+}
+/* Candidate name container's contact info  */
+div.candidate-name-container div:last-child{
+    align-self: flex-end;  
+    text-align: right; 
+}
+/* Candidate info flex box ends here */
+
+/* Candidate Name heading on top */
+h3.name-heading{
+    font-size: 1.7rem;
+    line-height: 70%;
+    letter-spacing: 3px;
+}
+/* Candidate Name, All Section, contact me headings */
+.name-heading,.section-heading, .contact-me-heading{
+    font-size: 1.4rem;
+}
+/*------------ Header Properties End------------ */
+/* ------------------------------------------------------ */
+/*------------ All Sections properties Start ------------ */
+section{
+    margin: 1em 0;
+    padding: 0 1em;
+}
+/* Sub heading in Work Experience section */
+section h4:nth-of-type(1){
+    margin: 0 0 0.5rem;
+}
+/* Sub heading in Work Experience section */
+section h4:nth-child(1){
+    margin: 0.3rem 0 0.3rem;
+}
+/* All Sections in main tag */
+main section{
+    border-top:1px solid  hsl(199, 8%, 41%);
+}
+/* All Section Headings  */
+h3.section-heading{
+    text-align: center;    
+}
+/* Section and contact me Headings */
+.section-heading,.contact-me-heading{
+    text-shadow: 1px 1px hsl(202, 60%, 40%, 0.9);
+    padding-bottom: 1rem;
+    padding-top: 0.4rem;
+}
+/*------------ All Sections properties End ------------ */
+/* ------------------------------------------------------ */
+/*------------ Skills Section properties Start ------------ */
+/* skills table */
+.skills-table{
+    width: 100%;
+}
+/* skills table tr(s) */
+table.skills-table tr{
+    display: flex;
+    justify-content: center;
+}
+/* skills table headings */
+.skills-table th{
+    font-size: 1.1em;
+    background-color: hsl(202, 60%, 40%, 0.6);
+    /* background-color: hsla(113, 79%, 42%, 0.5);; */
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: background-color 2s linear;
+    width: 100%; 
+}
+/* skills table td(s) in tbody */
+table.skills-table tbody tr td{
+    padding-top: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+/* skills table span */
+.skills-table tr td span{
+    background-color: hsl(202, 60%, 40%, 0.1);
+    padding: 4px;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 3px 3px hsla(201, 54%, 5%, 0.6);
+    /* border: 3px solid hsl(60, 14%, 15%);  */
+}
+/*------------ Skills Section properties End ------------ */
+/* ------------------------------------------------------ */
+/*--------- Contact me Section properties Start --------- */
+form input,select, textarea{
+    border: 3px solid hsl(60, 5%, 44%);
+    padding: 0.3rem;
+    margin-bottom:8px;
+    border: 2px dotted hsl(60, 14%, 15%); 
+}
+
+/* contact-me form section and container in section */
+.contact-form-section .contact-form-container{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(202, 60%, 40%, 0.1);
+    border-radius: 5px;
+    box-shadow: 4px 4px hsla(201, 54%, 5%, 0.6);
+}
+/* Contact me form */
+.contact-form-container form{
+    border-radius: 10px;
+    /* box-shadow: 5px -5px hsla(201, 54%, 5%, 0.6); */
+    padding: 3vw;
+}
+/* Checkboxes */
+input[type=checkbox]{
+    /* zoom: 1.5; */
+    transform: scale(1.5);
+    margin-right: 0.5em;
+ }
+ /* preferred-contact-container */
+ div.preferred-contact-container{
+    justify-content: flex-start;
+ }
+
+/* Contact form Fieldset as flex */
+ .contact-form-container fieldset{
+    display: flex;
+ }
+ /* checkboxes-container flex-direction column*/
+ div.checkboxes-container{
+    flex-direction: column;
+ }
+ /* Fieldset in contact-me form  */
+ fieldset p{
+     margin: 0.2rem 0;
+ }
+ /* Form elements all */
+form *{
+    /* vertical-align: middle; */
+    border-radius: 5px;
+}
+/* All divs in contact me form's container */
+.contact-form-container div{
+    display: flex;
+    /* justify-content: end; */
+}
+/* Form labels and legend */
+form label,legend{
+    flex-grow: 2;
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+    padding-right: 20px;
+}
+/* Form elements on focus */
+.contact-form-section form *:focus{
+    outline: 2px solid hsl(60, 14%, 15%);
+    /* outline: 3px dotted hsla(73, 78%, 53%, 0.9); */
+}
+/* Contact Me - Submit button container  */
+.submit-btn-container{
+justify-content: flex-end;
+}
+/* Contact me Form submit button */
+.contact-form-section button{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: hsl(60, 14%, 15%);
+    color: hsl(210, 25%, 98%);
+    /* border: 4px solid hsl(60, 14%, 15%); */
+}
+/* Contact me Form submit button hover over */
+button:hover{
+    background-color: hsl(202, 60%, 40%, 0.8);
+    /* color: #ffffff; */
+    border-radius: 5%;
+    /* border: 2px solid hsl(175, 14%, 15%); */
+    transition: background-color 0.5s ease-in-out;
+}
+/*--------- Contact me Section properties End --------- */
+/* ------------------------------------------------------ */
+/* Media Queries properties for (Max 480px Screen Size)   */
+@media(max-width: 480px){
+    /* body margin/padding */
+    body{
+        padding: 1.5vw;
+        margin: 1vw;
+    }
+    /* body, contact me form */
+    body, div.contact-form-container *, .skills-table th{
+        font-size: 3vw;    
+    }
+    /* All headings */
+    h3.name-heading,.section-heading,.contact-me-heading{
+      font-size: 4vw;
+      letter-spacing: 2px;
+    }
+    div.candidate-name-container h3.name-heading{
+        font-size: 4.5vw;
+    }
+    /* Name container as flex column */
+    div.candidate-name-container{
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+    /* Name container child divs */
+    div.candidate-name-container div:nth-child(1n+1){
+        align-self: flex-start;
+        text-align: left;
+    }
+
+}
